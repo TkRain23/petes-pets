@@ -136,7 +136,19 @@ module.exports = (app) => {
 
     // PURCHASE PET
     app.post('/pets/:id/purchase', (req, res) => {
-        console.log(`purchase body:${req.body}`);
-    })
+        console.log(req.body);
+        var stripe = require("stripe")(process.env.PRIVATE_STRIPE_API_KEY);
+        const token = req.body.stripeToken;
+
+        const charge = stripe.charges.create({
+            amount: 999,
+            currency: 'usd',
+            description: 'Example charge',
+            source: token,
+        }).then(() => {
+            res.redirect(`/pets/${req.params.id}`);
+        });
+        // console.log(`purchase body:${req.body}`);
+    });
 
 }

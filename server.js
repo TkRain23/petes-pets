@@ -53,5 +53,6 @@ app.use((err, req, res, next) => {
 });
 
 app.locals.PUBLIC_STRIPE_API_KEY = process.env.PUBLIC_STRIPE_API_KEY
+app.locals.PRIVATE_STRIPE_API_KEY = process.env.PRIVATE_STRIPE_API_KEY
 
 module.exports = app;

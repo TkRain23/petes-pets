@@ -140,15 +140,19 @@ module.exports = (app) => {
         var stripe = require("stripe")(process.env.PRIVATE_STRIPE_API_KEY);
         const token = req.body.stripeToken;
 
-        const charge = stripe.charges.create({
-            amount: 999,
-            currency: 'usd',
-            description: 'Example charge',
-            source: token,
-        }).then(() => {
-            res.redirect(`/pets/${req.params.id}`);
-        });
-        // console.log(`purchase body:${req.body}`);
+        Pet.findById(req.body.petId).exec((err, pet) => {
+            const charge = stripe.charges.create({
+                amount: pet.price * 100,
+                currency: 'usd',
+                description: `Purchased ${pet.name}, ${pet.species}`,
+                source: token,
+            }).then((chg) => {
+                res.redirect(`/pets/${req.params.id}`);
+            });
+        })
+            .catch(err => {
+                console.log('Error: ' + err);
+            });
     });
 
 }

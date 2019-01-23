@@ -2,6 +2,7 @@ module.exports = [
     {
         "name": "Rex",
         "species": "Rottweiler",
+        "price": 10,
         "birthday": "20017-11-11",
         "favoriteFood": "Chicken",
         "picUrl": "http://www.dogbreedslist.info/uploads/allimg/dog-pictures/Rottweiler-3.jpg",
@@ -11,6 +12,7 @@ module.exports = [
     {
         "name": "Fido",
         "species": "Greyhound",
+        "price": 10,
         "birthday": "2008-11-11",
         "favoriteFood": "Liver",
         "picUrl": "http://www.gpamass.com/s/img/emotionheader713297504.jpg",
@@ -20,6 +22,7 @@ module.exports = [
     {
         "name": "Rolfe",
         "species": "Pitbull",
+        "price": 10,
         "birthday": "2008-11-11",
         "favoriteFood": "Beef",
         "picUrl": "https://www.pocketpitbull.com/wp-content/uploads/2017/03/blue-staffy-pitbull-370x208.jpg",
@@ -29,6 +32,7 @@ module.exports = [
     {
         "name": "Princhi",
         "species": "West Highland White Terrier",
+        "price": 10,
         "birthday": "2008-11-11",
         "favoriteFood": "Fish",
         "picUrl": "http://www.dogbreedslist.info/uploads/allimg/dog-pictures/West-Highland-White-Terrier-2.jpg",
@@ -38,6 +42,7 @@ module.exports = [
     {
         "name": "Mr. Fluffles",
         "species": "Poodle",
+        "price": 10,
         "birthday": "2008-11-11",
         "favoriteFood": "Chicken",
         "picUrl": "https://i.ytimg.com/vi/-57vwuw_aY8/maxresdefault.jpg",
@@ -47,6 +52,7 @@ module.exports = [
     {
         "name": "Santa's Little Helper",
         "species": "Mixed",
+        "price": 10,
         "birthday": "2008-11-11",
         "favoriteFood": "Pork",
         "picUrl": "http://via.placeholder.com/350x150",
@@ -56,6 +62,7 @@ module.exports = [
     {
         "name": "Alf",
         "species": "Alien",
+        "price": 10,
         "birthday": "2008-11-11",
         "favoriteFood": "Cats",
         "picUrl": "http://via.placeholder.com/350x150",
@@ -65,6 +72,7 @@ module.exports = [
     {
         "name": "Bubba",
         "species": "Mastiff",
+        "price": 10,
         "birthday": "2008-11-11",
         "favoriteFood": "Dragon",
         "picUrl": "http://via.placeholder.com/350x150",

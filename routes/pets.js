@@ -150,9 +150,6 @@ module.exports = (app) => {
                 res.redirect(`/pets/${req.params.id}`);
             });
         })
-            .catch(err => {
-                console.log('Error: ' + err);
-            });
     });
 
 }
